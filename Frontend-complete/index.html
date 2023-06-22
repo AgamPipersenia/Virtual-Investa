@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Virtual Investa</title>
+  </head>
+  <body>
+    <div class="top-band">
+      <a href="index.html" class="hover">HOME</a>
+      <a href="buysell.html" class="hover">BUY/SELL</a>
+      <a href="portfolio.html" class="hover">PORTFOLIO</a>
+      <a href="contact.html" class="hover">CONTACT</a>
+    </div>
+
+    <div class="container">
+      <h1 id="welcome">Welcome to Virtual Investa !</h1>
+      <p class="front-page">
+        Embark on a trading journey like never before.<br />
+        With Virtual Investa, you can:<br />
+        <span id="element"></span>
+      </p>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["BUY", "SELL", "ANALYZE"],
+        typeSpeed: 70,
+      });
+    </script>
+  </body>
+</html>

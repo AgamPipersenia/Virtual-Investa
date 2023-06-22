@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Buy/Sell Stocks</title>
+  </head>
+  <body>
+    <div class="top-band">
+      <a href="index.html" class="hover">HOME</a>
+      <a href="buysell.html" class="hover">BUY/SELL</a>
+      <a href="portfolio.html" class="hover">PORTFOLIO</a>
+      <a href="contact.html" class="hover">CONTACT</a>
+    </div>
+
+    <div class="container">
+      <h1 id="heading" style="color: rgb(202, 169, 234)">BUY/SELL STOCKS:</h1>
+      <form action="" id="stock-form">
+        <div class="alert">Your message sent</div>
+        <label for="stock-symbol">Stock Symbol:</label>
+        <input type="text" id="stock-symbol" name="stock-symbol" required />
+
+        <label for="number-of-stocks">Number of Stocks:</label>
+        <input
+          type="number"
+          id="number-of-stocks"
+          name="number-of-stocks"
+          required
+        />
+
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" name="dropdown">
+          <option value="NONE">NONE</option>
+          <option value="BUY">BUY</option>
+          <option value="SELL">SELL</option>
+        </select>
+        <br />
+
+        <button type="submit"><strong>Perform action</strong></button>
+      </form>
+      <h1 id="heading" style="color: rgb(202, 169, 234)">YOUR CURRENT AMOUNT: 100000</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Stock Symbol</th>
+            <th>Name</th>
+            <th>Current Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AAPL</td>
+            <td>Apple Inc.</td>
+            <td>$150.25</td>
+          </tr>
+          <tr>
+            <td>GOOGL</td>
+            <td>Alphabet Inc.</td>
+            <td>$2500.75</td>
+          </tr>
+          <tr>
+            <td>MSFT</td>
+            <td>Microsoft Corporation</td>
+            <td>$300.50</td>
+          </tr>
+          <tr>
+            <td>NFLX</td>
+            <td>Netflix Inc</td>
+            <td>$210.50</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
